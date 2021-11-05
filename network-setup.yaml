@@ -7,19 +7,19 @@ Parameters:
         Description: Please enter IP range (CIDR Notation) for the custome VPC
         Type: String
         Default: 10.0.0.0/16
-    PublicSubnet-1-Cidr:
+    PublicSubnet1Cidr:
         Description: Please enter IP range (CIDR Notation) for public subnet 1
         Type: String
         Default: 10.0.0.0/24
-    PublicSubnet-2-Cidr:
+    PublicSubnet2Cidr:
         Description: Please enter IP range (CIDR Notation) for public subnet 2
         Type: String
         Default: 10.0.1.0/24
-    Privatesubnet-1-Cidr:
+    Privatesubnet1Cidr:
         Description: Please enter IP range (CIDR Notation) for private subnet 1
         Type: String
         Default: 10.0.2.0/24
-    PrivateSubnet-2-Cidr:
+    PrivateSubnet2Cidr:
         Description: Please enter IP range (CIDR Notation) for private subnet 2
         Type: String
         Default: 10.0.3.0/24
@@ -34,6 +34,8 @@ Resources:
       EnableDnsHostnames: 'true'
       Tags:
       - Key: stack
-         Value: production
+        Value: production
 
+
+    
 
